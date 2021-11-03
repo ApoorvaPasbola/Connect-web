@@ -7,20 +7,15 @@ import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-const ROUTES:Routes =[
-  {path:'home',component: HomeComponent}
-]
+const ROUTES: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo:'/home', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
+];
 @NgModule({
-  declarations: [
-    AppComponent,
-    PageNotFoundComponent,
-  ],
-  imports: [
-    CoreModule,
-    RouterModule.forRoot(ROUTES)
-
-  ],
+  declarations: [AppComponent],
+  imports: [CoreModule, RouterModule.forRoot(ROUTES)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
