@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: calc(100vh - 95%) calc(100vh - 5%);
+    height: 100vh;
+}
+.chat-container{
+    grid-column-start: 2;
+    display: grid;    
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.chat-container >* {
+    background: red;
+    height: 100% ;
+    text-align: center;
+}
+.navigation{
+    background: blue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.header{
+    background: green;
+}
