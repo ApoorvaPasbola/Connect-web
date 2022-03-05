@@ -1,0 +1,43 @@
+<div class="background">
+  <div class="container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>SignUp</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form [formGroup]="signUpForm">
+          <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input type="text" matInput placeholder="eg. Apoorva" formControlName="firstName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input type="text" matInput placeholder="eg. Pasbola" formControlName="lastName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input type="text" matInput placeholder="eg. apoorva.pasbola" formControlName="username">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="eg. apoorvapasbola@mail.com" formControlName="email" >
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>password</mat-label>
+            <input type="password" matInput formControlName="password">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>re-password</mat-label>
+            <input type="password" matInput  formControlName="repassword">
+          </mat-form-field>
+          <button type="button" class="submit" mat-raised-button color="primary" (click)="signUp()" >Create Account</button>
+        </form>
+
+
+      </mat-card-content>
+      <p> Already have an account? <a class="button"  routerLink="/login" >Login</a> </p>
+    </mat-card>
+
+  </div>
+</div>
+

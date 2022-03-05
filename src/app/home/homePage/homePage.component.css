@@ -3,17 +3,27 @@
     grid-template-columns: 1fr 9fr;
     grid-template-rows: calc(100vh - 95%) calc(100vh - 5%);
     height: 100vh;
+    text-align: center;
 }
 .chat-container{
     grid-column-start: 2;
-    display: grid;    
+    display: grid;
     grid-template-columns: 1fr 3fr 1fr;
 }
 .chat-container >* {
-    background: red;
+    /* background: red; */
     height: 100% ;
-    text-align: center;
 }
+.chatList{
+    background: pink;
+}
+.chatInfo{
+    background: thistle;
+}
+.chat{
+    background: violet;
+}
+
 .navigation{
     background: blue;
     grid-row-start: 1;

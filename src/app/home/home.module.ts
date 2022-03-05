@@ -6,8 +6,6 @@ import { ChatListComponent } from './chat-list/chat-list.component';
 import { ChatComponent } from './chat/chat.component';
 import { ChatInfoComponent } from './chat-info/chat-info.component';
 
-
-
 @NgModule({
   declarations: [
     HomePageComponent,

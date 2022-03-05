@@ -1,3 +1,18 @@
-body{
-    margin: 0px;
+
+:root {
+    --login-background-color: #cddafd;
+    --login-button-color: #545454;
+    --login-text-color: #3d4254;
+    --color-theme-darkest: #2d2b2d;
+    --color-theme-ligtest: #fdfefe;
+    --color-theme-light-1: #EEF0FA;
+    --color-theme-light-2: #E2E1EF;
+    --color-theme-light-3: #DEDDED;
+    --color-theme-light-4: #fefefe;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
