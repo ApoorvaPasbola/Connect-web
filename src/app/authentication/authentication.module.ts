@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { MatCardModule } from "@angular/material/card";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { RouterModule } from '@angular/router';
+import { AuthenticationService } from './authentication.service';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -17,6 +18,7 @@ import { RouterModule } from '@angular/router';
     MatCardModule,
     MatGridListModule,
     RouterModule
-    ]
+    ],
+    providers:[AuthenticationService]
 })
 export class AuthenticationModule { }
